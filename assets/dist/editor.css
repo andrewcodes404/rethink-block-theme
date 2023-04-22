@@ -1,0 +1,152 @@
+/* editor --- editor --- editor --- editor --- editor --- editor ---  */
+:root {
+  --green: #20a056;
+  --white:
+}
+
+
+/* the post title */
+.edit-post-visual-editor__post-title-wrapper{
+  padding: 20px 0;
+  background-color: lightgrey;
+  margin-top: 0 !important;
+  margin-bottom: 40px;
+}
+
+.edit-post-visual-editor__post-title-wrapper h1{
+  font-size: 28px;
+}
+
+.edit-post-visual-editor__post-title-wrapper h1::before{
+  content: "this is the post title: ";
+
+  font-weight: 400;
+}
+
+/* NOT WORKING */
+/* Hide the typography frop down in the "block" sidebar */
+.typography-block-support-panel{
+  display: none !important;
+}
+
+
+
+/* //editor does not like list-style-position: inside */
+ul,
+ol {
+  list-style-position: outside;
+  padding-left: 35px !important;
+}
+
+/* Very Clever */
+/* If child has .margin-block-start-0  apply to parent */
+/* div:has(> .margin-block-start-0) { margin-block-start: 0 !important } */
+
+/* If child has alignfull apply to parent */
+div:has(> .alignfull) { max-width: none !important}
+
+
+
+/* ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF ---  */
+/* ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF ---  */
+/* ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF --- ACF ---  */
+
+.acf-block-fields{
+  width: 100%;
+  max-width: var(--wp--style--global--content-size);
+  margin: 0 auto;
+  padding-right: var(--wp--preset--spacing--30) !important;
+  padding-left: var(--wp--preset--spacing--30) !important;
+  padding-bottom: var(--wp--preset--spacing--30) !important;
+  margin-bottom: var(--wp--preset--spacing--30) !important;;
+}
+
+.acf-input input[type='text']{
+  border: 1px solid var(--green);
+  border-radius: 6px;
+}
+.acf-field-number .description {
+  padding: 5px;
+}
+
+
+/* ACF Anchor Tabs */
+.wp-block-acf-anchor-tabs{
+  max-width: unset !important;
+}
+
+/* ACF hero */
+.rt-hero__bg-image {
+  z-index: 0;
+}
+.rt-hero__content{
+  z-index: 1;
+  position: relative;
+}
+
+/* ACF Icon Banner */
+.wp-block-acf-icon-banner{
+  max-width: unset !important;
+}
+
+
+/* ACF icon-title */
+.wp-block-acf-icon-title{
+  max-width: unset !important;
+}
+
+/* ACF Logos */
+.wp-block-acf-logos{
+  max-width: unset !important;
+}
+/* If child has no-margin-bottom apply to parent */
+.wp-block-acf-logos:has(> .rt-cards-wrapper--no-margin-bottom ) { padding: 0 !important}
+
+
+
+
+/* ACF Logos */
+.wp-block-acf-carousel{
+  max-width: unset !important;
+}
+/* If child has no-margin-bottom apply to parent */
+.wp-block-acf-carousel:has(> .rt-cards-wrapper--no-margin-bottom ) { padding: 0 !important}
+
+
+
+
+/* navigation --- navigation --- navigation --- navigation --- navigation ---  */
+
+.rt-navigation{
+  padding-bottom: 400px !important;
+}
+
+.editor-styles-wrapper .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+  color: #20a056 !important;
+  z-index: 999 !important;
+}
+
+/* .block-editor-block-list__block{
+  padding-bottom: 300px;
+  border: 1px solid blue;
+} */
+
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content {
+  top: 40px !important;
+  margin-top: 10px !important;
+  padding: 10px !important;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+/* footer --- footer --- footer --- footer --- footer ---  */
+
+.editor-styles-wrapper .rt-footer__gravity-row .gform_wrapper .gform_body .gform_fields .gfield .ginput_container {
+  height: 48px;
+}
+
+.rt-footer__gravity-row{
+  padding: 0 !important;
+
+}

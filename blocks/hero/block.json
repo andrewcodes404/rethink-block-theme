@@ -1,0 +1,39 @@
+{
+  "name": "hero",
+  "title": "Hero",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "cover-image",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/hero.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    },
+    "alignText": false,
+    "spacing": false,
+    "typography": {
+      "lineHeight": false,
+      "fontSize": false
+    },
+    "fullHeight": false
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "title_line_1": "Title Line 1",
+        "title_line_2": "and title Line 2",
+        "subtitle": "This is an example subtitle area field",
+        "background_image": "wp-content/themes/rethink-block-theme/assets/src/images/home-bg.png"
+      }
+    }
+  }
+}

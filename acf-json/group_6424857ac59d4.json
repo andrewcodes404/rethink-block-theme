@@ -1,0 +1,91 @@
+{
+    "key": "group_6424857ac59d4",
+    "title": "Block - Anchor Tabs",
+    "fields": [
+        {
+            "key": "field_6424857b59956",
+            "label": "Anchor Tabs",
+            "name": "tabs",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "Label Text : This is the text that appears on the tab\r\nAnchor ID :This is the unique ID of the element to jump to\r\nStart all jump ids with the prefix \"rt-\"\r\neg  rt-day-two or rt-bec-theatre",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "table",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add another tab",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_642485ae59957",
+                    "label": "Tab Label Text",
+                    "name": "label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6424857b59956"
+                },
+                {
+                    "key": "field_642485dd59958",
+                    "label": "Anchor Link",
+                    "name": "anchor_link",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "rt-example",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6424857b59956"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/anchor-tabs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680331580
+}

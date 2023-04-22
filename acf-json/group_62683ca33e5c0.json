@@ -1,0 +1,60 @@
+{
+    "key": "group_62683ca33e5c0",
+    "title": "Programme Snippet",
+    "fields": [
+        {
+            "key": "field_62683ca9806f3",
+            "label": "Location",
+            "name": "location",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "susTrans": "Sustainable Transformation Theatre",
+                "bec": "BEC Sustainable Business Theatre",
+                "susPart": "Sustainable Partnerships Theatre",
+                "susRes": "Sustainable Resources Theatre",
+                "susCom": "Sustainable Communities Theatre",
+                "change": "Change Makers Stage",
+                "futureLeaders": "Future Leaders Stage",
+                "workshop1": "Workshop 1",
+                "workshop2": "Workshop 2",
+                "workshop3": "Workshop 3",
+                "workshop4": "Workshop 4"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/programme-snippet"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1679779194
+}

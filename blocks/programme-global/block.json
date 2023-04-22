@@ -1,0 +1,12 @@
+{
+  "name": "programme-global",
+  "title": "Programme Global",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "editor-kitchensink",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "/programme-global.php"
+  },
+  "align": "full"
+}

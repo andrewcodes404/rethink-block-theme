@@ -1,0 +1,346 @@
+.rt-logos-wrapper {
+  @include margin-bottom-large;
+  padding: 30px 0;
+  background-color: $light-grey;
+  background-color: $light-grey;
+  @media (min-width: $break-desktop) {
+    padding: 50px 0;
+  }
+  h2 {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.rt-logo {
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 8px 11px 14px 0px rgba(204, 204, 204, 1);
+    transform: scale(1.01);
+  }
+}
+
+// Extra Large
+.rt-logos-xlarge {
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+}
+.rt-logo-xlarge {
+  max-width: 460px;
+  height: 244px;
+  margin: 0 auto 20px;
+  background-color: $white;
+  border-radius: 6px;
+
+  .rt-logo__img {
+    height: 100%;
+    padding: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: $break-tablet) {
+    height: 344px;
+  }
+
+  @media (min-width: $break-desktop) {
+    max-width: 455px;
+    height: 360px;
+  }
+  @media (min-width: $break-desktop-med) {
+    max-width: 555px;
+    height: 460px;
+  }
+}
+
+// Large cards
+.rt-logos-large {
+  width: 100%;
+  max-width: 930px;
+  margin: 0 auto;
+
+  @media (min-width: $break-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+}
+
+.rt-logo-large {
+  max-width: 460px;
+  height: 244px;
+  margin: 0 auto 20px;
+  background-color: $white;
+  border-radius: 6px;
+
+  .rt-logo__img {
+    height: 100%;
+    padding: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: $break-tablet) {
+    height: 344px;
+  }
+
+  @media (min-width: $break-desktop) {
+    width: calc(50% - 20px);
+    max-width: 455px;
+    height: 360px;
+  }
+  @media (min-width: $break-desktop-med) {
+    max-width: 455px;
+  }
+}
+
+// Medium cards
+.rt-logos-medium {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 560px;
+
+  margin: 0 auto;
+  @media (min-width: $break-desktop) {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 930px;
+  }
+}
+
+.rt-logo-medium {
+  width: calc(50% - 20px);
+  max-width: 265px;
+  margin: 0 auto 20px;
+  background-color: $white;
+  border-radius: 6px;
+
+  .rt-logo__img {
+    height: 100%;
+    padding: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: $break-desktop) {
+    width: calc(33% - 20px);
+    max-width: unset;
+  }
+  @media (min-width: $break-desktop-med) {
+  }
+}
+
+// Small Cards
+.rt-logos-small {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 560px;
+
+  margin: 0 auto;
+  @media (min-width: $break-desktop) {
+    max-width: 930px;
+  }
+}
+
+.rt-logo-small {
+  width: calc(33% - 10px);
+  max-width: 180px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: $white;
+
+  border-radius: 6px;
+
+  .rt-logo__img {
+    height: 100%;
+    padding: 15px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  @media (min-width: $break-desktop) {
+    width: calc(20% - 10px);
+  }
+}
+
+// Modal ---- Modal ---- Modal ---- Modal ---- Modal ---- Modal ---- Modal ----
+
+.rt-logo-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  height: 100vh;
+  padding-right: var(--wp--preset--spacing--20) !important;
+  padding-left: var(--wp--preset--spacing--20) !important;
+  background-color: rgba($black, 0.5);
+
+  &--show {
+    display: block;
+    animation: fadeIn ease 0.4s;
+    @media (min-width: $break-desktop) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.rt-logo-modal {
+  width: 100%;
+  max-width: 935px;
+  max-height: calc(100vh - 60px);
+  margin: 30px auto;
+  background-color: $white;
+  border-radius: 6px;
+  overflow-y: auto;
+
+  @media (min-width: $break-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__topbar {
+    position: relative;
+    height: 35px;
+    background-color: $black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      top: 9px;
+      bottom: 0;
+      left: 10px;
+
+      width: 16px;
+      height: 16px;
+      background-image: url(/wp-content/themes/rethink-block-theme/assets/src/images/icons/cross--white.svg);
+      color: $white;
+      content: '';
+    }
+
+    @media (min-width: $break-desktop) {
+      width: 100%;
+      height: 44px;
+
+      &:before {
+        top: 13px;
+        left: 14px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+  &__logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @media (min-width: $break-desktop) {
+      width: 25%;
+    }
+  }
+
+  &__content {
+    padding: 0 13px 20px;
+
+    @media (min-width: $break-desktop) {
+      width: 75%;
+      padding-top: 20px;
+    }
+  }
+
+  &__header {
+    @media (min-width: $break-desktop) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__header-title {
+    @media (min-width: $break-desktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h3 {
+      @include font-size(22, 24);
+      &:nth-child(2) {
+        font-weight: 400;
+      }
+      @media (min-width: $break-desktop) {
+        @include font-size(24, 28);
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__header-socials {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    @media (min-width: $break-desktop) {
+    }
+  }
+  &__header-social {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+
+    background-position: 0 0;
+    background-size: cover;
+
+    @media (min-width: $break-desktop) {
+      width: 33px;
+      height: 33px;
+    }
+
+    &--website {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-website-globe--black.svg');
+    }
+    &--linkedin {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-linkedin--black.svg');
+    }
+    &--facebook {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-fb--black.svg');
+    }
+    &--instagram {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-insta--black.svg');
+    }
+    &--twitter {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-twitter--black.svg');
+    }
+  }
+
+  // &__desc {}
+}

@@ -1,0 +1,479 @@
+{
+    "key": "group_5ff1b1e46bf5c",
+    "title": "Session",
+    "fields": [
+        {
+            "key": "field_5ff1b60d59a82",
+            "label": "Day",
+            "name": "day",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "day1": "Day 1",
+                "day2": "Day 2"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ff1b66d55f53",
+            "label": "Start Time",
+            "name": "time_start",
+            "aria-label": "",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i",
+            "return_format": "H:i"
+        },
+        {
+            "key": "field_5ff1b7b0410e4",
+            "label": "End Time",
+            "name": "time_end",
+            "aria-label": "",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "H:i",
+            "return_format": "H:i"
+        },
+        {
+            "key": "field_60df1663851cd",
+            "label": "AM or PM",
+            "name": "am_or_pm",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "am": "AM",
+                "pm": "PM"
+            },
+            "allow_null": 1,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ff1ba3395875",
+            "label": "Duration (in mins)",
+            "name": "duration",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
+        },
+        {
+            "key": "field_6009e02d34b94",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_6009df7453566",
+            "label": "Start date + time for export",
+            "name": "start_time_for_export",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/y H:i",
+            "return_format": "m\/d\/y H:i",
+            "first_day": 1
+        },
+        {
+            "key": "field_6009dfa553567",
+            "label": "End date + time for export",
+            "name": "end_time_for_export",
+            "aria-label": "",
+            "type": "date_time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "m\/d\/y H:i",
+            "return_format": "m\/d\/y H:i",
+            "first_day": 1
+        },
+        {
+            "key": "field_6009e03b34b95",
+            "label": "",
+            "name": "",
+            "aria-label": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5ff1b3272451e",
+            "label": "Location",
+            "name": "location",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "keynote": "Net Zero & Nature Positive Theatre (Keynote)",
+                "roundtables": "ReThink Roundtables",
+                "bec": "BEC Circular Transition Theatre",
+                "innovation": "Innovations and Technology Theatre",
+                "people": "People and Purpose Theatre",
+                "buildings": "Sustainable Buildings and Facilities Theatre",
+                "finance": "Sustainable Finance & Supply Chains Theatre",
+                "change": "Change Makers Stage",
+                "workshop-a": "Workshop A",
+                "workshop-b": "Workshop B",
+                "workshop-c": "Workshop C",
+                "workshop-d": "Workshop D"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 1,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ff1b3cc2451f",
+            "label": "Category",
+            "name": "category",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cities": "Cities & Mobility",
+                "decarb": "Decarbonisation",
+                "cirEcon": "Circular Economy",
+                "people": "People & Purpose",
+                "redefine": "Redefining Values",
+                "foodNature": "Food & Nature"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ff1b51f1220d",
+            "label": "Sustainable Development Goals",
+            "name": "sdg",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "poverty": "1 - No Poverty",
+                "hunger": "2 - Zero Hunger",
+                "health": "3 - Good Health and Well-being",
+                "education": "4 - Quality Education",
+                "gender": "5 - Gender Equality",
+                "water": "6 - Clean Water and Sanitation",
+                "energy": "7 - Affordable and Clean Energy",
+                "work": "8 - Decent Work and Economic Growth",
+                "industry": "9 - Industry, Innovation and Infrastructure",
+                "inequality": "10 - Reduced Inequality",
+                "cities": "11 - Sustainable Cities and Communities",
+                "consumption": "12 - Responsible Consumption and Production",
+                "climate": "13 - Climate Action",
+                "lifeWater": "14 - Life Below Water",
+                "lifeLand": "15 - Life on Land",
+                "justice": "16 - Peace and Justice Strong Institutions",
+                "partnerships": "17 - Partnerships to achieve the Goals"
+            },
+            "default_value": [],
+            "allow_null": 1,
+            "multiple": 1,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_5ff1b91f95872",
+            "label": "Presentation Type",
+            "name": "presentation_type",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "keynotePanel": "Keynote Panel",
+                "panel": "Panel",
+                "keynoteSolo": "Keynote Solo",
+                "solo": "Solo",
+                "fireside": "Fireside",
+                "workshop": "Workshop"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60cc65e324476",
+            "label": "Moderators",
+            "name": "moderators",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "speaker-items"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_60929f289ff50",
+            "label": "Speakers",
+            "name": "speakers",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "speaker-items"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_6092a1f836aff",
+            "label": "Partners",
+            "name": "partners",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "partner-items"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_60929f602f16d",
+            "label": "Sponsors",
+            "name": "sponsors",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "sponsor-items"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_5ff1b8ce9586f",
+            "label": "Overview",
+            "name": "overview",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "In depth description of the session",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "session"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "session-2022"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "sessions-2023"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1681975848
+}

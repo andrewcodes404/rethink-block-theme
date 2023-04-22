@@ -1,0 +1,23 @@
+.b-snippet-wrapper {
+  padding-bottom: 25px;
+  @media (min-width: $break-desktop) {
+    padding-bottom: 45px;
+  }
+}
+
+.b-snippet-hint {
+  display: inline;
+  padding: 1px 6px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.b-snippet {
+  h4 {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+}

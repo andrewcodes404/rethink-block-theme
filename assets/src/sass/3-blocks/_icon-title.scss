@@ -1,0 +1,93 @@
+.rt-icon-title-wrapper {
+  @include margin-bottom-large;
+  margin: 25px 0 0;
+}
+
+.rt-icon-title {
+  height: 60px;
+
+  background-color: $green;
+  @include background-color;
+}
+
+.rt-icon-title__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0px 0px 16px;
+  padding-right: var(--wp--preset--spacing--20);
+  padding-left: var(--wp--preset--spacing--20);
+  @media (min-width: $break-desktop) {
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 900px;
+    padding: 14px 0 12px;
+  }
+}
+
+.rt-icon-title__text {
+  position: relative;
+  z-index: 1;
+  // margin-top: -5px;
+  margin-bottom: 0 !important;
+  color: $white;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  line-height: 1;
+  text-align: center;
+  @media (min-width: $break-desktop) {
+    padding: 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+  }
+}
+
+.rt-icon-title__icon-wrapper {
+  @media (min-width: $break-desktop) {
+    position: relative;
+    width: 130px;
+    min-width: 130px;
+  }
+}
+
+.rt-icon-title__icon {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  padding: 10px;
+  background-color: $green;
+
+  border-radius: 30px;
+  @include background-color;
+  img {
+    width: 100%;
+    height: 100%;
+    margin-top: -3px;
+    object-fit: contain;
+  }
+
+  @media (min-width: $break-desktop) {
+    position: absolute;
+    bottom: -50px;
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    padding: 20px;
+
+    border-radius: 50px;
+
+    img {
+      margin-top: 0;
+    }
+  }
+}
+
+.rt-icon-title__icon--icon-email {
+  img {
+    margin-left: 2px;
+  }
+}

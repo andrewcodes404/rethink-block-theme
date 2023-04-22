@@ -1,0 +1,29 @@
+{
+  "name": "carousel-all-in-one",
+  "title": "Carousel - All in One",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "buddicons-groups",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "/carousel.php"
+  },
+  "supports": {
+    "mode": false,
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    },
+    "alignText": false,
+    "spacing": false,
+    "typography": {
+      "lineHeight": false,
+      "fontSize": false
+    },
+    "fullHeight": false
+  }
+}

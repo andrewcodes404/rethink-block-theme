@@ -1,0 +1,53 @@
+// .b-cta-wrapper {
+//   border: 1px solid #ff0000;
+//   text-align: center;
+// }
+
+// .b-cta {
+//   display: inline-block;
+//   margin: 30px;
+//   padding: 10px 20px;
+//   color: $white;
+
+//   text-decoration: none;
+//   transition: 0.4s;
+//   p {
+//     margin-bottom: 0;
+//     font-weight: 400;
+//   }
+
+//   &--yellow {
+//     background-color: $gold;
+//     a {
+//       color: $black;
+//       text-decoration: none;
+//     }
+//     &:hover {
+//       background-color: $grey;
+//       a {
+//         color: $green;
+//       }
+//     }
+//   }
+//   &:hover {
+//     opacity: 0.6;
+//   }
+
+//   &--green {
+//     background-color: $green;
+//     a {
+//       color: $white;
+//       text-decoration: none;
+//     }
+
+//     &:hover {
+//       background-color: $grey;
+//       a {
+//         color: $green;
+//       }
+//     }
+//   }
+
+//   @include colour-pick;
+//   @include colour-pick-text;
+// }

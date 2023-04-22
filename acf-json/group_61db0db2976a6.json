@@ -1,0 +1,75 @@
+{
+    "key": "group_61db0db2976a6",
+    "title": "Element - Colour Pick",
+    "fields": [
+        {
+            "key": "field_642ddac07fec4",
+            "label": "Colour Pick",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_61db0dbc0e909",
+            "label": "",
+            "name": "color",
+            "aria-label": "",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "black": "Black",
+                "green": "Green",
+                "sky-blue": "Sky Blue - Roundtable",
+                "lime": "Lime - BEC Circular Transition",
+                "blue": "Blue - Innovation & Technology Theatre",
+                "rust": "Rust - Sustainable Finance & Supply Chains Theatre",
+                "gold": "Gold - People & Purpose Theatre",
+                "purple": "Purple - Sustainable Buildings & Facilities Theatre",
+                "pink": "Pink - Change Makers Stage"
+            },
+            "default_value": "green",
+            "return_format": "value",
+            "allow_null": 0,
+            "other_choice": 0,
+            "layout": "horizontal",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680729271
+}

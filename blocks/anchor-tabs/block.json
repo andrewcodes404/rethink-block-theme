@@ -1,0 +1,35 @@
+{
+  "name": "anchor-tabs",
+  "title": "Anchor Tabs",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "database-import",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/anchor-tabs.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": true,
+      "link": false
+    },
+    "alignText": false,
+    "spacing": false,
+    "typography": {
+      "lineHeight": false,
+      "fontSize": false
+    },
+    "fullHeight": false
+  },
+  "spacing": {
+    "padding": [
+      "top",
+      "bottom"
+    ]
+  }
+}

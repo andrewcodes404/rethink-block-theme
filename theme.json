@@ -1,0 +1,225 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "1190px",
+      "wideSize": "1400px"
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "spacingSizes": [
+        {
+          "size": "clamp(0.50rem, 3vw, 0.75rem)",
+          "slug": "10",
+          "name": "1"
+        },
+        {
+          "size": "clamp(0.75rem, 4vw, 1.25rem)",
+          "slug": "20",
+          "name": "2"
+        },
+        {
+          "size": "clamp(1.5rem, 5vw, 2rem)",
+          "slug": "30",
+          "name": "3"
+        },
+        {
+          "size": "clamp(1.8rem, 6.5vw, 3rem)",
+          "slug": "40",
+          "name": "4"
+        },
+        {
+          "size": "clamp(2.25rem, 8vw, 4.5rem)",
+          "slug": "50",
+          "name": "5"
+        },
+        {
+          "size": "clamp(2.75rem, 10vw, 7rem)",
+          "slug": "60",
+          "name": "6"
+        }
+      ]
+    },
+    "border": {
+      "color": false,
+      "radius": false,
+      "style": false,
+      "width": false
+    },
+    "color": {
+      "text": true,
+      "background": true,
+      "link": false,
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "duotone": [],
+      "gradients": [],
+      "palette": [
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "light-grey",
+          "color": "#f5f5f5",
+          "name": "Light Grey"
+        },
+        {
+          "slug": "green",
+          "color": "#20A056",
+          "name": "Green"
+        },
+        {
+          "slug": "sky-blue",
+          "color": "#19bbee",
+          "name": "Sky Blue - Roundtable"
+        },
+        {
+          "slug": "lime",
+          "color": " #b4f723",
+          "name": "Lime - BEC Circular Transition"
+        },
+        {
+          "slug": "blue",
+          "color": "#2f32f5",
+          "name": "Blue - Innovation & Technology Theatre"
+        },
+        {
+          "slug": "rust",
+          "color": "#e5593f",
+          "name": "Rust - Sustainable Finance & Supply Chains Theatre"
+        },
+        {
+          "slug": "gold",
+          "color": "#edb71a",
+          "name": "Gold - People & Purpose Theatre"
+        },
+        {
+          "slug": "purple",
+          "color": "#69089e",
+          "name": "Purple - Sustainable Buildings & Facilities Theatre"
+        },
+        {
+          "slug": "pink",
+          "color": "#e97193",
+          "name": "Pink - Change Makers Stage"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": false,
+      "customFontSize": false,
+      "fontStyle": false,
+      "fontWeight": false,
+      "letterSpacing": false,
+      "lineHeight": false,
+      "textDecoration": false,
+      "textTransform": false,
+      "dropCap": false,
+      "fontSizes": [],
+      "fontFamilies": [
+        {
+          "fontFamily": "Montserrat, sans-serif",
+          "slug": "montserrat"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "spacing": {
+      "padding": {
+        "top": "0px",
+        "right": "var(--wp--preset--spacing--20)",
+        "bottom": "0px",
+        "left": "var(--wp--preset--spacing--20)"
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--montserrat)"
+    },
+    "elements": {
+      "button": {
+        "color": {
+          "background": "var(--wp--preset--color--green)",
+          "text": "#ffffff"
+        },
+        "typography": {
+          "fontWeight": "700",
+          "fontSize": "18px"
+        },
+        "border": {
+          "radius": "6px"
+        },
+        ":hover": {
+          "color": {
+            "background": "#138496"
+          }
+        },
+        ":focus": {
+          "color": {
+            "background": "#138496"
+          }
+        },
+        ":active": {
+          "color": {
+            "background": "#138496"
+          }
+        }
+      }
+    },
+    "blocks": {
+      "core/paragraph": {
+        "spacing": {
+          "padding": {
+            "top": "0.3rem",
+            "right": "",
+            "bottom": "var(--wp--preset--spacing--10)",
+            "left": ""
+          }
+        }
+      },
+      "core/heading": {
+        "spacing": {
+          "padding": {
+            "top": "0.3rem",
+            "right": "0",
+            "bottom": "var(--wp--preset--spacing--10)",
+            "left": "0"
+          }
+        }
+      },
+      "core/list": {
+        "spacing": {
+          "padding": {
+            "top": "0.3rem",
+            "right": "0",
+            "bottom": "var(--wp--preset--spacing--10)",
+            "left": "0"
+          }
+        }
+      },
+      "pb/accordion-item": {
+        "spacing": {
+          "padding": {
+            "top": "0.3rem",
+            "right": "0",
+            "bottom": "var(--wp--preset--spacing--10)",
+            "left": "0"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+// This is a plugin  https://wordpress.org/plugins/accordion-blocks/
+
+.c-accordion__wrapper {
+  padding: var(--wp--preset--spacing--50) var(--wp--preset--spacing--20);
+  background-color: $light-grey;
+}
+
+.c-accordion__item {
+  margin-bottom: var(--wp--preset--spacing--10);
+  padding: 0 var(--wp--preset--spacing--20);
+  background-color: $white;
+  // @include carousel-width;
+  border-radius: 6px;
+
+  .c-accordion__title {
+    position: relative;
+    margin-bottom: 0;
+    padding: var(--wp--preset--spacing--20) 0 var(--wp--preset--spacing--20)
+      var(--wp--preset--spacing--50);
+
+    @include font-size(20);
+    &:after {
+      display: none;
+    }
+
+    &::before {
+      position: absolute;
+      top: calc(50% - 12px);
+      left: 0px;
+      width: 24px;
+      height: 24px;
+
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/arrow-black--right.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transition: 0.2s;
+      content: '';
+    }
+
+    &:hover {
+      &::before {
+        transform: translate(5px);
+      }
+    }
+
+    @media (min-width: $break-desktop) {
+      @include font-size(28);
+      margin-bottom: var(--wp--preset--spacing--20);
+      padding: var(--wp--preset--spacing--30) 0 var(--wp--preset--spacing--30)
+        var(--wp--preset--spacing--40);
+
+      &:before {
+        top: calc(50% - 16px);
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+.c-accordion__item.is-open {
+  .c-accordion__title {
+    position: relative;
+    // padding-left: 72px;
+
+    &::before {
+      transform: rotate(90deg);
+    }
+  }
+}
+.c-accordion__title--button {
+} /* An accordion item title that is using a `<button>` tag */
+.c-accordion__title:hover {
+} /* To modify the style when hovering over an accordion item title */
+.c-accordion__title:focus {
+} /* To modify the style when an accordion item title currently has broswer focus */
+.c-accordion__content {
+} /* An accordion item content container */

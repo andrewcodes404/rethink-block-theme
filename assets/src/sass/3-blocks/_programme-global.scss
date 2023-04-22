@@ -1,0 +1,383 @@
+/*************************
+ * GRID SCHEDULE LAYOUT
+ *************************/
+
+@mixin box-shadow {
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 0, rgba(0, 0, 0, 0.3) 3px 3px 0;
+}
+
+// MOBILE --- MOBILE --- MOBILE ---
+
+.pro-global-tracks-mobile {
+  @media (min-width: $break-desktop) {
+    display: none;
+  }
+}
+.pro-global-tracks-title {
+  @include colour-pick;
+  @include colour-pick-text;
+  @include box-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  margin-bottom: 14px;
+  padding: 0 10px;
+  transition: 0.4s;
+  cursor: pointer;
+
+  &__arrow {
+    display: block;
+    font-size: 26px;
+    transform: rotate(0deg);
+    transition: 0.4s;
+  }
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+
+  @media (min-width: $break-desktop) {
+    display: none;
+  }
+}
+
+.pro-global-tracks-title--open .pro-global-tracks-title__arrow {
+  transform: rotate(180deg);
+}
+
+.pro-global-track-wrapper {
+  display: none;
+  margin-bottom: 14px;
+  padding: 5px 8px 1px 5px;
+
+  color: $black;
+  a {
+    color: $black;
+  }
+  &--open {
+    display: block;
+  }
+}
+
+// DESKTOP --- DESKTOP --- DESKTOP ---
+
+.pro-global-page-wrapper {
+  // overflow-y: visible;
+  // overflow-x: scroll;
+}
+
+.pro-global {
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+  overflow-x: scroll;
+}
+
+.pro-global__buttons {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  //
+  margin-bottom: 30px;
+
+  @media (min-width: $break-desktop) {
+    // margin-left: 90px;
+  }
+}
+
+.pro-global__buttons-title {
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pro-global__button-wrapper {
+  h3 {
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  display: none;
+
+  &--active {
+    display: block;
+    align-items: center;
+  }
+
+  @media (min-width: $break-desktop) {
+    padding-left: 84px;
+    h3 {
+      margin-bottom: 0;
+    }
+
+    &--active {
+      display: flex;
+    }
+  }
+}
+
+.pro-global__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 8px;
+  margin-right: 3px;
+  // width: 40px;
+  padding: 10px 14px;
+  background-color: $yellow;
+  border: none;
+  outline: 0;
+  color: $black;
+  font-size: 18px;
+  font-weight: 600;
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    // opacity: 0.8;
+    filter: brightness(0.8);
+  }
+}
+
+.pro-global__day1,
+.pro-global__day2 {
+  display: none;
+
+  &--show {
+    display: block;
+  }
+}
+
+.pro-global__schedule {
+  @media (min-width: $break-desktop) {
+    // overflow-x: scroll;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows:
+      [tracks] auto
+      [time-0915] auto
+      [time-0920] auto
+      [time-0925] auto
+      [time-0930] auto
+      [time-0935] auto
+      [time-0940] auto
+      [time-0945] auto
+      [time-0950] auto
+      [time-0955] auto
+      [time-1000] auto
+      [time-1005] auto
+      [time-1010] auto
+      [time-1015] auto
+      [time-1020] auto
+      [time-1025] auto
+      [time-1030] auto
+      [time-1035] auto
+      [time-1040] auto
+      [time-1045] auto
+      [time-1050] auto
+      [time-1055] auto
+      [time-1100] auto
+      [time-1105] auto
+      [time-1110] auto
+      [time-1115] auto
+      [time-1120] auto
+      [time-1125] auto
+      [time-1130] auto
+      [time-1135] auto
+      [time-1140] auto
+      [time-1145] auto
+      [time-1150] auto
+      [time-1155] auto
+      [time-1200] auto
+      [time-1205] auto
+      [time-1210] auto
+      [time-1215] auto
+      [time-1220] auto
+      [time-1225] auto
+      [time-1230] auto
+      [time-1235] auto
+      [time-1240] auto
+      [time-1245] auto
+      [time-1250] auto
+      [time-1255] auto
+      [time-1300] auto
+      [time-1305] auto
+      [time-1310] auto
+      [time-1315] auto
+      [time-1320] auto
+      [time-1325] auto
+      [time-1330] auto
+      [time-1335] auto
+      [time-1340] auto
+      [time-1345] auto
+      [time-1350] auto
+      [time-1355] auto
+      [time-1400] auto
+      [time-1405] auto
+      [time-1410] auto
+      [time-1415] auto
+      [time-1420] auto
+      [time-1425] auto
+      [time-1430] auto
+      [time-1435] auto
+      [time-1440] auto
+      [time-1445] auto
+      [time-1450] auto
+      [time-1455] auto
+      [time-1500] auto
+      [time-1505] auto
+      [time-1510] auto
+      [time-1515] auto
+      [time-1520] auto
+      [time-1525] auto
+      [time-1530] auto
+      [time-1535] auto
+      [time-1540] auto
+      [time-1545] auto
+      [time-1550] auto
+      [time-1555] auto
+      [time-1600] auto
+      [time-1605] auto
+      [time-1610] auto
+      [time-1615] auto
+      [time-1620] auto
+      [time-1625] auto
+      [time-1630] auto
+      [time-1635] auto
+      [time-1640] auto
+      [time-1645] auto
+      [time-1650] auto
+      [time-1655] auto
+      [time-1700] auto
+      [time-1705] auto
+      [time-1710] auto
+      [time-1715] auto
+      [time-1720] auto
+      [time-1725] auto
+      [time-1730] auto
+      [time-1735] auto
+      [time-1740] auto
+      [time-1745] auto
+      [time-1750] auto
+      [time-1755] auto;
+    /* Note 1:
+      Use 24hr time for gridline names for simplicity
+
+      Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
+      Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
+      */
+
+    grid-template-columns:
+      [times] 80px
+      [track-1-start] 150px
+      [track-1-end track-2-start] 150px
+      [track-2-end track-3-start] 150px
+      [track-3-end track-4-start] 150px
+      [track-4-end track-5-start] 150px
+      [track-5-end track-6-start] 150px
+      [track-6-end track-7-start] 150px
+      [track-7-end track-8-start] 150px
+      [track-8-end];
+    // }
+  }
+}
+
+.pro-global__time-slot {
+  display: none;
+  @media (min-width: $break-desktop) {
+    display: block;
+    margin: 0;
+    font-size: 1em;
+    font-size: 14px;
+
+    font-weight: bold;
+    grid-column: times;
+  }
+}
+
+.pro-global__track-slot {
+  display: none;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  @media (min-width: $break-desktop) {
+    @supports (display: grid) {
+      // position: sticky;
+      top: 80px;
+      display: block;
+      padding: 10px;
+      color: $white;
+      // z-index: 1000;
+      @include colour-pick;
+      @include colour-pick-text;
+    }
+  }
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+// Sessions --- Sessions --- Sessions ---
+// Sessions --- Sessions --- Sessions ---
+// Sessions --- Sessions --- Sessions ---
+
+.pro-global__session {
+  margin-bottom: 1em;
+  padding: 2px 5px;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: rgba(255, 255, 255, 0.6) 1px 1px 0, rgba(0, 0, 0, 0.3) 3px 3px 0;
+  font-size: 14px;
+  @media (min-width: $break-desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.pro-global__session--desktop {
+  display: none;
+  @media (min-width: $break-desktop) {
+    display: block;
+  }
+}
+
+.pro-global__session-title {
+  margin: 0;
+  font-size: 14px;
+
+  a {
+    display: block;
+    margin-bottom: 6px;
+    color: #fff;
+    // text-decoration-style: dotted;
+
+    &:hover {
+      // font-style: italic;
+    }
+
+    &:focus {
+      // outline: 2px dotted rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &--black {
+    a {
+      color: $black;
+    }
+  }
+}
+
+.pro-global__session--mobile {
+  background-color: rgb(216, 216, 216);
+  .pro-global__session-title {
+    a {
+      color: $black;
+    }
+  }
+}
+
+.pro-global__session-time {
+}

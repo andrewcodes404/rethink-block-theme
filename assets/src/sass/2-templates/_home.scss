@@ -1,0 +1,15 @@
+.rt-home-banner {
+  .wp-block-group {
+    .wp-block-image {
+      img {
+        width: 90px;
+
+        @media (min-width: $break-desktop) {
+          width: 120px;
+        }
+      }
+    }
+  }
+
+  margin-bottom: 50px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "logos",
+  "title": "Logos",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "images-alt",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/logos.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": false,
+      "link": false
+    },
+    "alignText": false,
+    "spacing": false,
+    "typography": {
+      "lineHeight": false,
+      "fontSize": false
+    },
+    "fullHeight": false
+  }
+}

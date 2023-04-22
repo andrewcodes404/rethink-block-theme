@@ -1,0 +1,59 @@
+.rt-icon-banner-wrapper {
+  @include margin-bottom-large;
+
+  background-color: $black;
+
+  &--themes {
+    background-color: $dark-green;
+  }
+}
+
+.rt-icon-banner {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 50px 0 20px;
+  padding-right: var(--wp--preset--spacing--30);
+  padding-left: var(--wp--preset--spacing--30);
+
+  @media (min-width: $break-tablet) {
+    justify-content: space-between;
+    max-width: 1190px;
+  }
+}
+
+.rt-icon-banner__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 120px;
+  padding-bottom: 30px;
+  @media (min-width: $break-desktop) {
+    max-width: 160px;
+  }
+}
+
+.rt-icon-banner__icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+
+  @media (min-width: $break-desktop) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.rt-icon-banner__caption {
+  p {
+    color: $white;
+    @include font-size(18, 20);
+    font-weight: 700;
+    text-align: center;
+  }
+}

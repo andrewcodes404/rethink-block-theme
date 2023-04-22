@@ -1,0 +1,48 @@
+.b-speakers-list {
+}
+
+.filters {
+  margin-bottom: 10px;
+}
+
+.filter-button {
+  margin-right: 3px;
+  margin-bottom: 8px;
+  padding: 10px;
+  background-color: #fff;
+  outline: 0;
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  &:hover {
+    background-color: $light-grey;
+  }
+}
+
+.filter-button--active {
+  background-color: $green;
+  color: $white;
+}
+
+@keyframes speaker-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.b-speakers-list__speaker {
+  display: block;
+  transition: 0.4s;
+  animation: speaker-fade-in 1.4s forwards;
+  cursor: pointer;
+  &--hide {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(0.98);
+    filter: brightness(0.7);
+  }
+}

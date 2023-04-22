@@ -1,0 +1,38 @@
+{
+  "name": "icon-title",
+  "title": "Icon Title",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "slides",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "/icon-title.php"
+  },
+  "align": "full",
+  "supports": {
+    "align": false,
+    "anchor": false,
+    "alignContent": false,
+    "color": {
+      "text": false,
+      "background": true,
+      "link": false
+    },
+    "alignText": false,
+    "spacing": false,
+    "typography": {
+      "lineHeight": false,
+      "fontSize": false
+    },
+    "fullHeight": false
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "title": "Icon title text here...",
+        "icon": "icon-city",
+        "color": "green"
+      }
+    }
+  }
+}

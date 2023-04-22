@@ -1,0 +1,29 @@
+{
+  "name": "youtube",
+  "title": "YouTube",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "admin-comments",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "/youtube.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "color": true,
+    "spacing": {
+      "padding": [
+        "top",
+        "bottom"
+      ]
+    }
+  },
+  "example": {
+    "attributes": {
+      "data": {
+        "youtube_embed": "https://www.youtube.com/watch?v=lFcSrYw-ARY&ab_channel=MeditationRelaxMusic"
+      }
+    }
+  }
+}

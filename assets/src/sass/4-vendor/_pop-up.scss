@@ -1,0 +1,145 @@
+/* stylelint-disable */
+.sgpb-content {
+  border: none;
+
+  border-radius: 6px !important;
+}
+
+.sgpb-main-html-content-wrapper {
+  width: 100%;
+  max-width: 840px;
+  background-color: $green;
+
+  border-radius: 6px;
+
+  .rt-pop-up__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/home-bg.png');
+    background-size: cover;
+
+    @media (min-width: $break-tablet) {
+      padding: 60px;
+    }
+
+    h2 {
+      padding-top: 10px;
+      background: $green;
+      border-radius: 6px;
+      box-shadow: 10px 0 0 $green, -10px 0 0 $green;
+      color: $white;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+      @media (min-width: $break-tablet) {
+        margin: 0 0 30px 0 !important;
+        font-size: 80px;
+        line-height: 94px;
+      }
+    }
+
+    p {
+      max-width: 490px;
+      margin: 0 !important;
+      padding: 6px 6px 6px 16px;
+      background: $green;
+      border-radius: 8px;
+      box-shadow: 10px 0 0 $green, -10px 0 0 $green;
+      color: $white;
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+
+  .rt-pop-up__form {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    @media (min-width: $break-tablet) {
+      padding: 60px;
+    }
+
+    .gform_wrapper {
+      margin: 0 !important;
+
+      border: 3px solid $white;
+      border-radius: 6px;
+
+      form {
+        display: flex;
+      }
+    }
+
+    .gform_wrapper .gform_body {
+      width: 200px;
+      padding: 10px !important;
+
+      @media (min-width: $break-tablet) {
+        width: 260px;
+      }
+      @media (min-width: $break-desktop) {
+        width: 360px;
+      }
+    }
+
+    .gform_wrapper .gform_body .gfield_label {
+      display: none;
+    }
+
+    .gform_wrapper .gform_body .gfield {
+      margin-bottom: 0;
+    }
+
+    .gform_wrapper .gform_body .gform_fields .gfield .ginput_container {
+      height: 48px;
+      input {
+        height: 100%;
+        padding: 0px 15px;
+        color: $white;
+        font-size: 14px;
+
+        @media (min-width: $break-desktop) {
+          padding: 0px 35px;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .gform_wrapper .gform_body .gform_fields .gfield .ginput_container input::placeholder {
+      padding-top: 5px;
+      color: $white !important;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1;
+      @media (min-width: $break-desktop) {
+        font-style: 22px;
+      }
+    }
+
+    .gform_wrapper .gform_footer {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .gform_wrapper .gform_footer input[type='submit'] {
+      height: 100%;
+      margin: 0;
+      padding: 9px 30px;
+      background-color: $white;
+      border-radius: 0;
+      color: $green;
+      font-size: 18px;
+      font-weight: 700;
+      @media (min-width: $break-desktop) {
+        padding: 9px 50px;
+      }
+    }
+  }
+}
+/* stylelint-enable */

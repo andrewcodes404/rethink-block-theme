@@ -1,0 +1,82 @@
+{
+    "key": "group_6225ec938593f",
+    "title": "Element - Icon Picker",
+    "fields": [
+        {
+            "key": "field_6422957646cc1",
+            "label": "Icons",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_6225ec9e4e242",
+            "label": "",
+            "name": "icon",
+            "aria-label": "",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": "acf-illustration-picker"
+            },
+            "choices": {
+                "icon-C02": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-C02\"><\/div><\/div>",
+                "icon-city": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-city\"><\/div><\/div>",
+                "icon-community": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-community\"><\/div><\/div>",
+                "icon-company": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-company\"><\/div><\/div>",
+                "icon-donation": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-donation\"><\/div><\/div>",
+                "icon-email": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-email\"><\/div><\/div>",
+                "icon-followers": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-followers\"><\/div><\/div>",
+                "icon-national": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-national\"><\/div><\/div>",
+                "icon-partners": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-partners\"><\/div><\/div>",
+                "icon-planet": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-planet\"><\/div><\/div>",
+                "icon-regional": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-regional\"><\/div><\/div>",
+                "icon-solutions": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-solutions\"><\/div><\/div>",
+                "icon-speakers": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-speakers\"><\/div><\/div>",
+                "icon-themed-theatres": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-themed-theatres\"><\/div><\/div>",
+                "icon-total-visitors": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-total-visitors\"><\/div><\/div>",
+                "icon-trees": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-trees\"><\/div><\/div>",
+                "icon-website": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-website\"><\/div><\/div>",
+                "icon-workshops": "<div class=\"acf-icon-wrapper\"><div class=\"acf-icon acf-icon--icon-workshops\"><\/div><\/div>"
+            },
+            "default_value": "icon-website",
+            "return_format": "value",
+            "allow_null": 0,
+            "layout": "horizontal"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1680728617
+}

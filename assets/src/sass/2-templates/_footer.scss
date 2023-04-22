@@ -1,0 +1,157 @@
+// FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER --- FOOTER ---
+
+/* stylelint-disable */
+
+.rt-footer {
+  padding-right: var(--wp--preset--spacing--20) !important;
+  padding-left: var(--wp--preset--spacing--20) !important;
+}
+
+.rt-footer__socials {
+  display: flex;
+  padding-bottom: 20px;
+  .wp-block-social-link {
+    svg {
+      display: none;
+    }
+  }
+}
+
+.rt-footer__socials-logo {
+  margin-right: 20px;
+}
+
+.rt-footer__social-icons {
+  display: flex;
+  justify-content: start;
+  li {
+    list-style: none;
+  }
+}
+
+.rt-footer__social-icon {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+
+  cursor: pointer;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: $green;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    content: '';
+  }
+
+  &--instagram {
+    &:before {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-insta.svg');
+    }
+  }
+
+  &--mail {
+    &:before {
+      bottom: -24px;
+      width: 45px;
+      height: 36px;
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-mail.svg');
+    }
+  }
+
+  &--facebook {
+    &:before {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-fb.svg');
+    }
+  }
+
+  &--linkedin {
+    &:before {
+      background-image: url('/wp-content/themes/rethink-block-theme/assets/src/images/icons/icon-linkedin.svg');
+    }
+  }
+}
+
+.rt-footer__gravity-row {
+  padding: 0;
+  .gform_wrapper {
+    border: 3px solid $white;
+    border-radius: 6px;
+
+    form {
+      display: flex;
+    }
+  }
+
+  .gform_wrapper .gform_body {
+    width: 220px;
+    padding: 0 !important;
+    @media (min-width: $break-desktop) {
+      width: 360px;
+    }
+  }
+
+  .gform_wrapper .gform_body .gfield {
+    margin-bottom: 0;
+  }
+
+  .gform_wrapper .gform_body .gfield_label {
+    display: none;
+  }
+
+  .gform_wrapper .gform_body .gform_fields .gfield .ginput_container {
+    height: 48px;
+    input {
+      height: 100%;
+      padding: 0px 15px;
+      color: $white;
+      font-size: 14px;
+
+      @media (min-width: $break-desktop) {
+        padding: 0px 35px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .gform_wrapper .gform_body .gform_fields .gfield .ginput_container input::placeholder {
+    padding-top: 5px;
+    color: $white !important;
+    font-size: 14px;
+    line-height: 1;
+    @media (min-width: $break-desktop) {
+      font-style: 18px;
+    }
+  }
+
+  .gform_wrapper .gform_footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gform_wrapper .gform_footer input[type='submit'] {
+    height: 48px;
+    margin: 0;
+    padding: 9px 30px;
+    background-color: $white;
+    border-radius: 0;
+    color: $green;
+    font-size: 18px;
+    font-weight: 700;
+    @media (min-width: $break-desktop) {
+      padding: 9px 50px;
+    }
+  }
+}
+
+.rt-footer__legal {
+  padding: 0;
+}
+/* stylelint-enable  */

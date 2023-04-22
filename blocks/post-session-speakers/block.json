@@ -1,0 +1,21 @@
+{
+  "name": "post-sesion-speakers",
+  "title": "Post Session Speakers",
+  "description": "A custom Rethink block",
+  "category": "rethink-blocks",
+  "icon": "images-alt",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "/post-sesion-speakers.php"
+  },
+  "align": "full",
+  "supports": {
+    "anchor": true,
+    "spacing": {
+      "padding": [
+        "top",
+        "bottom"
+      ]
+    }
+  }
+}
